@@ -9,14 +9,10 @@
 
 .cabecalho{
     background-color: var(--branco);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
+    display:flex;
+    justify-content:space-between;
+    position:relative;
 
-.cabecalho__imagem{
-    padding: 1em;
 }
 
 .container{
@@ -24,11 +20,14 @@
     align-items: center;
 }
 
+.cabecalho__imagem{
+    padding: 1em;
+}
+
 .lista-menu{
     display: none;
-    position:absolute;
-    top:100%;
-    width: 60vw;
+    position: absolute;
+    top: 100%;
 }
 
 .container__botao:checked~.lista-menu{
@@ -45,10 +44,9 @@
 }
 
 .lista-menu__link{
-    background: var(--azul-degrade);
+    background: var(--azul);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
 }
-
